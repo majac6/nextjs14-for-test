@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nextjs
-          image: https://hub.docker.com/repository/docker/vhcns5/my-app:latest
+          image: docker.io/vhcns5/my-app:latest
           ports:
             - containerPort: 3000
           env:
