@@ -28,7 +28,7 @@ jobs:
           context: ./my-app
           file: ./my-app/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:${{ github.sha }}
 
       - name: Log out from Docker Hub
         run: docker logout
