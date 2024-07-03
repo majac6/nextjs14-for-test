@@ -104,7 +104,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            코드 바꿈
+            코드 한번더 바꿈
           </p>
         </a>
       </div>
