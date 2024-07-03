@@ -42,7 +42,7 @@ jobs:
           git checkout deploy
 
           # Update manifests/deployment.yml with the new image tag
-          sed -i "s|image: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:.*|image: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:${{ github.sha }}|" manifests/deployment.yml
+          sed -i "s|image: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:.*|image: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:${{ github.sha }}|" manifests/deployment.yaml
 
           # Commit and push changes to deploy branch
           git add manifests/deployment.yml
