@@ -104,7 +104,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            코드 한번더 바꿈
+            자동으로 싱크가 맞춰지길..
           </p>
         </a>
       </div>
