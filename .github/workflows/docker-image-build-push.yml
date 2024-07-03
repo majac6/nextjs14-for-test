@@ -41,11 +41,11 @@ jobs:
           git fetch origin deploy
           git checkout deploy
 
-          # Update manifests/deployment.yml with the new image tag
+          # Update manifests/deployment.yaml with the new image tag
           sed -i "s|image: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:.*|image: ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:${{ github.sha }}|" manifests/deployment.yaml
 
           # Commit and push changes to deploy branch
-          git add manifests/deployment.yml
+          git add manifests/deployment.yaml
           git commit -m "Update image to ${{ secrets.DOCKER_HUB_USERNAME }}/my-app:${{ github.sha }}"
           git push origin deploy
 
